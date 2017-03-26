@@ -16,6 +16,15 @@ echo "UPDATING OS"
 sudo apt-get update
 sudo apt-get upgrade
 
+# INSTALL PYTHON
+echo "INSTALLING PYTHON"
+sudo apt-get install python
+
+# INSTALL CHIP_IO
+echo "INSTALLING CHIP_IO"
+curl -O https://github.com/xtacocorex/CHIP_IO/releases/download/v0.5.6/python-chip-io_0.5.6-1_armhf.deb
+sudo dpkg -i python-chip-io_0.5.6-1_armhf.deb
+
 # DONE
 echo "DONE"
 
